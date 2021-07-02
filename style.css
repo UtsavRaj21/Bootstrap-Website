@@ -1,0 +1,225 @@
+*{
+    margin: 0;
+    padding: 0;;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.navbar{
+    background: rgba(0, 0, 0, 0.863);
+    padding: 1rem 8rem; /*(top/bootom,left/right)*/
+    z-index: 1000;
+    
+}
+
+#navbarSupportedContent > ul > li:nth-child(n) > a{
+    color: white;
+    font-size: 1.1rem;
+    padding:0rem 0.8rem;
+}
+
+#navbarSupportedContent > ul > li:nth-child(n) > a:hover,
+#navbarSupportedContent > ul > li:nth-child(n) > a:active{
+    color: rgba(0, 255, 136, 0.651);
+}
+
+#navbarSupportedContent > button{
+    background:rgb(0, 228, 49) ;
+    font-weight: 600;;
+    padding: 0.4rem 1.4rem;;
+    border-radius: 30px;
+    /* color: white; */
+}
+
+.mid{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    display: flex; 
+    /* position: absolute; */
+    align-items: center;
+    justify-content:center ;
+    text-align: center;
+}
+
+.mid video{
+    width: 100%;
+    height: 100%;
+    pointer-events:none ;
+    object-fit: cover;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.mid .hero{
+    position: relative;
+    padding-bottom: 1rem;
+}
+
+.mid .hero a{
+    background:rgb(0, 228, 49) ;
+    font-weight: 600;;
+    padding: 0.4rem 1.4rem;;
+    border-radius: 30px;
+    text-decoration: none;
+}
+
+.mid .hero a:hover{
+    background-color: blue;
+}
+.about{
+    background: #000;
+}
+
+.about .text{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin: auto;
+}
+
+.about .text h6{
+    color: rgb(61, 250, 23);
+    font-weight: 800;
+    font-size: 1rem;
+    letter-spacing: 2px;
+}
+
+.about .text h2{
+    color: rgb(252, 252, 252);
+    font-weight: 700;
+    font-size: 3rem;
+}
+
+.about .text p{
+    color: rgb(255, 255, 255);
+    font-weight: 400;
+    font-size: 1rem;
+    letter-spacing: 2px;
+}
+.about .text a{
+    background:rgb(61, 250, 23);
+    font-weight: 400;;
+    padding: 0.4rem 1.4rem;;
+    border-radius: 30px;
+    text-decoration: none;
+    color: black;
+}
+
+.discovery .text{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin: auto;
+}
+
+.discovery .text h6{
+    color: rgb(61, 250, 23);
+    font-weight: 800;
+    font-size: 1rem;
+    letter-spacing: 2px;
+}
+
+.discovery .text h2{
+    color: rgb(0, 0, 0);
+    font-weight: 700;
+    font-size: 3rem;
+}
+
+.discovery .text p{
+    color: rgb(26, 26, 26);
+    font-weight: 400;
+    font-size: 1rem;
+    letter-spacing: 2px;
+}
+.discovery .text a{
+    background:#111;
+    font-weight: 400;;
+    padding: 0.4rem 1.4rem;;
+    border-radius: 30px;
+    text-decoration: none;
+    color: white;
+}
+
+.service{
+    background: #000;
+}
+
+.service .one{
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 1.5rem;
+    border-radius: 7px;
+
+}
+
+
+.sign .text{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin: auto;
+}
+
+.sign .text h6{
+    color: rgb(61, 250, 23);
+    font-weight: 800;
+    font-size: 2rem;
+    letter-spacing: 2px;
+}
+
+.sign .text h2{
+    color: rgb(0, 0, 0);
+    font-weight: 700;
+    font-size: 3rem;
+}
+
+.sign .text p{
+    color: rgb(0, 0, 0);
+    font-weight: 400;
+    font-size: 1rem;
+    letter-spacing: 2px;
+}
+.sign .text a{
+    background:rgb(61, 250, 23);
+    font-weight: 400;;
+    padding: 0.4rem 1.4rem;;
+    border-radius: 30px;
+    text-decoration: none;
+    color: black;
+}
+
+body>footer{
+    background: #111;
+}
+
+body > footer > ul.list-unstyled.list-inline.text-center.py-2 > li:nth-child(n) > a{
+    background:rgb(61, 250, 23);
+    font-weight: 400;;
+    padding: 0.4rem 1.4rem;;
+    border-radius: 30px;
+    text-decoration: none;
+    color: black;
+    border: none;
+}
+
+@media screen and (max-width:988px){
+    .navbar{
+        padding: 0rem 1rem; /*(top/bootom,left/right)*/
+    }
+    #navbarSupportedContent > ul {
+        padding-left: 0.8rem; 
+    }
+    #navbarSupportedContent > ul > li:nth-child(n) > a {
+        padding: 0.8rem 0rem;
+    }
+}
